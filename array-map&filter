@@ -1,0 +1,37 @@
+// / map & filter
+
+const products = [
+    {"id":"0002-3250","Name":"Foil - 4oz Custard Cup","Description":"Industrial","Price":"$2.25","inStock":false},
+    {"id":"49349-186","Name":"Chocolate - White","Description":"Kids","Price":"$5.07","inStock":false},
+    {"id":"64117-963","Name":"Petite Baguette","Description":"Automotive","Price":"$2.98","inStock":true},
+    {"id":"59779-067","Name":"Wasabi Powder","Description":"Sports","Price":"$2.35","inStock":true},
+    {"id":"51672-4016","Name":"Beef - Cow Feet Split","Description":"Kids","Price":"$8.56","inStock":true},
+    {"id":"63304-552","Name":"Filter - Coffee","Description":"Shoes","Price":"$7.66","inStock":false},
+    {"id":"0378-0221","Name":"Flour - Teff","Description":"Health","Price":"$8.77","inStock":true},
+    {"id":"52670-556","Name":"Noodles - Cellophane, Thin","Description":"Electronics","Price":"$3.36","inStock":false},
+    {"id":"60675-000","Name":"Lamb - Ground","Description":"Shoes","Price":"$4.88","inStock":false},
+    {"id":"55154-7566","Name":"Beans - Kidney, Red Dry","Description":"Music","Price":"$9.72","inStock":false},
+    {"id":"53389-602","Name":"Ocean Spray - Kiwi Strawberry","Description":"Toys","Price":"$3.73","inStock":true},
+    {"id":"55154-2084","Name":"Canadian Emmenthal","Description":"Beauty","Price":"$7.40","inStock":true},
+    {"id":"67457-196","Name":"Milk Powder","Description":"Automotive","Price":"$5.98","inStock":false},
+    {"id":"21695-233","Name":"Longos - Grilled Veg Sandwiches","Description":"Industrial","Price":"$2.33","inStock":true},
+    {"id":"45802-921","Name":"Ice Cream - Fudge Bars","Description":"Jewelry","Price":"$9.02","inStock":true},
+]
+
+
+const products_names = products.map(function (products, index, array) {
+    return products.Name; 
+});
+
+console.log(products_names);
+
+
+// OR
+
+const products_names = [];
+ 
+for (let i = 0, max = products.length; i < max; i += 1) {
+    products_names.push(products[i].Name);
+}
+
+console.log(products_names) ;
